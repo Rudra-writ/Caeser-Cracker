@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caeser Cracker</title>
+
+    <style>
+
+input[type=text] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=number] {
+  width: 10%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.p2 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+.p1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-submit-button {
+	background: #55ca1f;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 40px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+}
+
+.form-submit-button:hover {
+	background: #3a5a72;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 40px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+}
+
+body {
+background-color: rgb(23, 29, 26);
+}
+
+</style>
+</head>
+<body >
+  <center>
+  <br>
+        <div>
+          
+            <h1 class = "p2" style="color:rgb(226, 241, 231)"> Caeser Cracker </h1>
+        
+        </div>
+
+<form method="post">
+
+</br>
+
+<h3 class = "p2" style="color:rgb(226, 241, 231)"> Please enter a Caeser Cyphered message here or simply use the encrypt option below to generate a cyphered message!! </h3>
+</br>
+<p class = "p2" style="color:rgb(226, 241, 231)"> Your encrypted message: <input  type="text" class="input"  name="e_message">    <input type="submit" class = "form-submit-button"  name ="crypt" value="Decrypt"></p>
+</br>
+<table>
+    <tr>
+    <td> <p class = "p2" style="color:rgb(226, 241, 231)"> Cracked Information:  <p class = "p2" style="color:rgb(197, 228, 42)">{{d_message}}</p> </p> </td>
+    </tr> 
+</table>
+
+</br>
+</br>
+<h4 class = "p2" style="color:rgb(226, 241, 231)"> Enter a message and a key below to encrypt it. Copy the encrypted version above to crack it.. </h4>
+</br>
+<p class = "p2" style="color:rgb(226, 241, 231)"><input  type="text" class="input"  name="message" placeholder="Your Message" >  <input  type="number" class="input"  name="key" max = "25" min = "0" step = "1" placeholder="key">   <input type="submit" class = "form-submit-button"  name ="crypt" value="Encrypt"></p>
+</br>
+<p class = "p2" style="color:rgb(36, 117, 223)"> Encrypted message:  {{cc_message}}</p>
+</form>
+</br>
+</center>
+
+</body>
+</html>
